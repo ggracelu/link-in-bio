@@ -1,2 +1,126 @@
-<h1>This is my homepage</h1>
-My link-in-bio
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Lu's Links</title>
+
+    <style>
+      * {
+        border: 1px red dashed;
+      }
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: radial-gradient(circle at 50% 50%, #fffffd, #ffead6, #ffcccc, #ffb3e8, #e0b8ff, #b8caff, #9bd6ff, #95def5);
+        color: rgba(174, 14, 139, 0.91);
+      }
+
+      a {
+        color: rgba(0, 69, 142, 0.91);
+      }
+
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        object-fit: cover;
+      }
+
+      .item {
+        background-color: rgba(202, 168, 234, 0.681);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .link-text {
+        /* text-align: center; */
+        padding-left: 5%;
+        flex-grow: 1;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="image-row">
+        <img class="avatar-image" src="/headshot.jpg" alt="Grace Lu Headshot">
+      </div>
+
+      <div class="name-row">
+        Grace Lu
+      </div>
+
+      <div class="social-icons-row">
+        <a href="https://www.instagram.com/ggracelu/" target="_blank">
+            Instagram
+        </a>
+
+        <a href="https://www.linkedin.com/in/ggrace-lu" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://github.com/ggracelu" target="_blank">
+            GitHub
+        </a>
+      </div>
+
+      <div class="links-row">
+        <div class="item">
+          <img class="thumbnail" src="/goodreads.jpg" alt="Books photo">
+          <a class="link-text" target="_blank" href="https://www.goodreads.com/user/show/146753297-grace-lu">
+            goodreads
+          </a>
+        </div>
+
+        <div class="item">
+          <img class="thumbnail" src="/beli.jpg" alt="Restaurant photo">
+          <a class="link-text" target="_blank" href="https://beliapp.co/app/ggracelu">
+            beli
+          </a>
+        </div>
+
+        <div class="item">
+          <img class="thumbnail" src="/painting.jpg" alt="Painting photo">
+          <a class="link-text" target="_blank" href="https://graces-slices.webflow.io/">
+            blog
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
