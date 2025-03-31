@@ -3,26 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <title>Grace Lu's Links</title>
 
     <style>
-      * {
+      /* * {
         border: 1px red dashed;
-      }
+      } */
       html {
         min-height: 100%;
       }
 
       body {
-        min-height: 100%
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
         background: radial-gradient(circle at 50% 50%, #fffffd, #ffead6, #ffcccc, #ffb3e8, #e0b8ff, #b8caff, #9bd6ff, #95def5);
         color: rgba(174, 14, 139, 0.91);
+        font-family: "Helvetica";
       }
 
       a {
         color: rgba(0, 69, 142, 0.91);
+        text-decoration: none;
       }
 
       .avatar-image {
@@ -41,14 +44,17 @@
 
       .item {
         background-color: rgba(202, 168, 234, 0.681);
+        box-shadow: 4px 4px 10px 0px rgba(164, 83, 164, 0.5);
+        border-radius: 60px;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
+        padding: 5px;
+        padding-right: 53px;
       }
 
       .link-text {
-        /* text-align: center; */
-        padding-left: 5%;
+        text-align: center;
         flex-grow: 1;
       }
 
@@ -65,6 +71,9 @@
       .name-row {
         margin-bottom: 30px;
         text-align: center;
+        font-family: "Garamond";
+        font-size: 32px;
+        font-weight: 900;
       }
 
       .social-icons-row {
@@ -87,14 +96,17 @@
 
       <div class="social-icons-row">
         <a href="https://www.instagram.com/ggracelu/" target="_blank">
-            Instagram
+          <i class="fa-brands fa-square-instagram"></i>
+          Instagram
         </a>
 
         <a href="https://www.linkedin.com/in/ggrace-lu" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
             LinkedIn
         </a>
 
         <a href="https://github.com/ggracelu" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
             GitHub
         </a>
       </div>
@@ -103,21 +115,21 @@
         <div class="item">
           <img class="thumbnail" src="/goodreads.jpg" alt="Books photo">
           <a class="link-text" target="_blank" href="https://www.goodreads.com/user/show/146753297-grace-lu">
-            goodreads
+            Check out what I'm reading on GoodReads
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/beli.jpg" alt="Restaurant photo">
           <a class="link-text" target="_blank" href="https://beliapp.co/app/ggracelu">
-            beli
+            Or see where I've been eating on Beli
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/painting.jpg" alt="Painting photo">
           <a class="link-text" target="_blank" href="https://graces-slices.webflow.io/">
-            blog
+            Or if you're curious about my blog, click here!
           </a>
         </div>
       </div>
